@@ -3,6 +3,23 @@
 <head>
   <title>역사</title>
   <meta charset="utf-8">
+  <style>
+    #active {
+      color:red;
+      text-decoration: underline;
+    }
+    a {
+      color: brown;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .saw {
+      color: gray;
+    }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7MTPJY2PY"></script>
 <script>
@@ -14,11 +31,11 @@
 </script>
 </head>
 <body>
-  <h1><a href="index.html"><font color="brown">빵</font></a></h1>
+  <h1><a href="index.html">빵</a></h1>
   <ol>
-    <li><a href="1.html"><font color="brown">세계 언어에서의 어원</font></a></li>
-    <li><a href="2.html"><font color="brown">역사</font></a></li>
-    <li><a href="3.html"><font color="brown">종류</font></a></li>
+    <li><a href="1.html" class="saw">세계 언어에서의 어원</a></li>
+    <li><a href="2.html" id="active">역사</a></li>
+    <li><a href="3.html" class="saw">종류</a></li>
   </ol>
   <h2>역사</h2>
   <p style="margin-top:20px;">
