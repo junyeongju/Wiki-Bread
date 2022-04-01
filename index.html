@@ -4,6 +4,9 @@
   <title>빵</title>
   <meta charset="utf-8">
   <style>
+    body {
+      margin: 0;
+    }
     a {
       color:brown;
       text-decoration: none;
@@ -11,6 +14,25 @@
     h1 {
       font-size: 2.5em;
       text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 15px;
+    }
+    ol {
+      border-right: 1px solid gray;
+      width: 160px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+    }
+    #grid ol {
+      padding-left: 33px;
+    }
+    #grid #article {
+      padding-left: 25px;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,28 +46,22 @@
 </script>
 </head>
 <body>
-  <h1><a href="index.html" style="color:red; text-decoration:underline;">빵</a></h1>
-  <ol>
-    <li><a href="1.html">세계 언어에서의 어원</a></li>
-    <li><a href="2.html">역사</a></li>
-    <li><a href="3.html">종류</a></li>
-  </ol>
-<!--
-  <h1><a href="index.html"><font color="brown">빵</font></a></h1>
-  <ol>
-    <li><a href="1.html"><font color="brown">세계 언어에서의 어원</font></a></li>
-    <li><a href="2.html"><font color="brown">역사</font></a></li>
-    <li><a href="3.html"><font color="brown">종류</font></a></li>
-  </ol>
--->
-  <h2>빵</h2>
-  <img src="mohamed-hassouna-N4gtuEZ5gWc-unsplash.jpg" width="50%">
-  <p style="margin-top:20px;">
-    <a href="https://ko.wikipedia.org/wiki/%EB%B9%B5" target="_blank" title="위키백과 '빵' 문서">위키백과 '빵' 문서 출처</a></p>
-  <p style="margin-top:10px;">
-    빵(포르투갈어: pão 팡)은 <strong>곡식 가루와 물로 된 <u>반죽을 굽거나, 찌거나, 튀겨 만든 음식</u></strong>이다. 영국의 브리태니커 백과사전에 따르면, <strong>“빵을 밀가루와 물로 만들어진 반죽을 구워서 준비한 <u>일반식”</u></strong>이라고 정의하고 있고, 한국 국립국어원 표준국어대사전에서는 “밀가루를 주원료로 하여 소금, 설탕, 버터, 효모 따위를 섞어 반죽하여 발효한 뒤에 불에 굽거나 찐 음식, <strong><u>서양 사람들의 주 음식</u>”, “먹고 살 양식”</strong>으로 정의한다. 한국에서는 빵을 쌀과 함께 <strong><u>식량과 기아</u>를 의미하는 상징적인 시어</strong>로 종종 사용되곤 한다.</p>
-  <p style="margin-top:10px;">
-    거의 대부분 <strong><u>밀가루</u>로 만들지만 쌀, 옥수수, 보리, 감자 등 <u>각종 곡식의 가루</u></strong>로도 만들기도 한다. 발효를 하지 않는 케이크나 쿠키와 혼동되는 경우가 많지만 엄연히 다르다.</p>
+  <h1><a href="index.html">빵</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">세계 언어에서의 어원</a></li>
+      <li><a href="2.html">역사</a></li>
+      <li><a href="3.html">종류</a></li>
+    </ol>
+    <div id="article">
+      <h2>빵</h2>
+      <img src="mohamed-hassouna-N4gtuEZ5gWc-unsplash.jpg" width="50%">
+      <p style="margin-top:20px;">
+        <a href="https://ko.wikipedia.org/wiki/%EB%B9%B5" target="_blank" title="위키백과 '빵' 문서">위키백과 '빵' 문서 출처</a></p>
+      <p style="margin-top:10px;">
+        빵(포르투갈어: pão 팡)은 <strong>곡식 가루와 물로 된 <u>반죽을 굽거나, 찌거나, 튀겨 만든 음식</u></strong>이다. 영국의 브리태니커 백과사전에 따르면, <strong>“빵을 밀가루와 물로 만들어진 반죽을 구워서 준비한 <u>일반식”</u></strong>이라고 정의하고 있고, 한국 국립국어원 표준국어대사전에서는 “밀가루를 주원료로 하여 소금, 설탕, 버터, 효모 따위를 섞어 반죽하여 발효한 뒤에 불에 굽거나 찐 음식, <strong><u>서양 사람들의 주 음식</u>”, “먹고 살 양식”</strong>으로 정의한다. 한국에서는 빵을 쌀과 함께 <strong><u>식량과 기아</u>를 의미하는 상징적인 시어</strong>로 종종 사용되곤 한다.</p>
+      <p style="margin-top:10px;">
+        거의 대부분 <strong><u>밀가루</u>로 만들지만 쌀, 옥수수, 보리, 감자 등 <u>각종 곡식의 가루</u></strong>로도 만들기도 한다. 발효를 하지 않는 케이크나 쿠키와 혼동되는 경우가 많지만 엄연히 다르다.</p>
   <p>
     <div id="disqus_thread"></div>
 <script>
@@ -80,5 +96,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+</div>
 </body>
 </html>

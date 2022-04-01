@@ -4,10 +4,6 @@
   <title>세계 언어에서의 어원</title>
   <meta charset="utf-8">
   <style>
-    #active {
-      color:red;
-      text-decoration: underline;
-    }
     a {
       color: brown;
       text-decoration: none;
@@ -16,8 +12,21 @@
       font-size: 2.5em;
       text-align: center;
     }
-    .saw {
-      color: gray;
+    ol {
+      border-right: 1px solid gray;
+      width: 160px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+    }
+    #grid ol {
+      padding-left: 33px;
+    }
+    #grid #article {
+      padding-left: 25px;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -32,22 +41,24 @@
 </head>
 <body>
   <h1><a href="index.html">빵</font></a></h1>
-  <ol>
-    <li><a href="1.html" id="active">세계 언어에서의 어원</a></li>
-    <li><a href="2.html" class="saw">역사</a></li>
-    <li><a href="3.html" class="saw">종류</a></li>
-  </ol>
-  <h2>세계 언어에서의 어원</h2>
-  <p style="margin-top:20px;">
-    <a href="https://ko.wikipedia.org/wiki/%EB%B9%B5" target="_blank" title="위키백과 '빵' 문서">위키백과 '빵' 문서 출처</a></p>
-  <p style="margin-top:10px;">
-    고대 영어에서의 <strong><u>bread</u>는 게르만족의 언어에서 온 다양한 <u>공통적인 형태를 띤 단어</u></strong>였다. 서부 프리지아어에서는 brea, 네덜란드어에서는 brood, 독일어에서는 Brot, 스웨덴어에서는 bröd, 노르웨이어와 덴마크어에서는 brød로 불렸다. 그것은 <strong><u>'양조하는 것'(brewing)에서 기원</u></strong>하였다고 주장되어 왔다. 그러나 이것은 <strong><u>'깨다(break)'의 어원과 연결</u>될 수도 있는데, 일찍이 <u>'부러진 조각' 또는 '약간의 빵'에 사용</u></strong>되었다. <strong>고대 튜튼어인 <u>Braudz(조각)에서 유래</u>되었다</strong>는 주장도 있다.</p>
-  <p style="margin-top:10px;">
-    라틴어로 <strong><u>crustum</u></strong>는 12세기까지 포괄적인 빵의 명칭 hlaf (hlaifs에서의 고트어:현대 영어 loaf)으로 쓰이지 않았고, <strong><u>게르만 민족 특유의 가장 오래된 이름</strong></u>에서 나타나기 시작했다; 고대 귀족들이 사용하던 독일어 hleib 및 현대 독일어 Laib, 또는 핀란드어 leipä, 에스토니아어 leib, 및 러시아어 хлеб (khleb)가 유사하다. 모두 <strong>고대 귀족들이 사용하던 독일어인 <u>"loaf"</u>에서 왔다.</strong></p>
-  <p style="margin-top:10px;">
-    일본어 <strong><u>パン</u>은 16세기 무렵 포르투갈어 <u>pão</u>에서 유래</strong>되었으며,<strong>한국어 빵도 일본을 통해 전래</strong>되었다. 개화기 당시에는 <strong>중국어 표현인 <u>‘면포(중국어 간체자: 面包, 정체자: 麵麭, 병음: miànbāo)’</u></strong>라는 이름으로 부른 적이 있다.</p>
-  <p style="margin-top:10px;">
-    로망스어군의 포르투갈어 pão 스페인어 pan, 프랑스어 Pain 은 그리스 어인 pa, 라틴어인 panis에서 기원하였다.</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">세계 언어에서의 어원</a></li>
+      <li><a href="2.html">역사</a></li>
+      <li><a href="3.html">종류</a></li>
+    </ol>
+    <div id="article">
+      <h2>세계 언어에서의 어원</h2>
+      <p style="margin-top:20px;">
+        <a href="https://ko.wikipedia.org/wiki/%EB%B9%B5" target="_blank" title="위키백과 '빵' 문서">위키백과 '빵' 문서 출처</a></p>
+      <p style="margin-top:10px;">
+        고대 영어에서의 <strong><u>bread</u>는 게르만족의 언어에서 온 다양한 <u>공통적인 형태를 띤 단어</u></strong>였다. 서부 프리지아어에서는 brea, 네덜란드어에서는 brood, 독일어에서는 Brot, 스웨덴어에서는 bröd, 노르웨이어와 덴마크어에서는 brød로 불렸다. 그것은 <strong><u>'양조하는 것'(brewing)에서 기원</u></strong>하였다고 주장되어 왔다. 그러나 이것은 <strong><u>'깨다(break)'의 어원과 연결</u>될 수도 있는데, 일찍이 <u>'부러진 조각' 또는 '약간의 빵'에 사용</u></strong>되었다. <strong>고대 튜튼어인 <u>Braudz(조각)에서 유래</u>되었다</strong>는 주장도 있다.</p>
+      <p style="margin-top:10px;">
+        라틴어로 <strong><u>crustum</u></strong>는 12세기까지 포괄적인 빵의 명칭 hlaf (hlaifs에서의 고트어:현대 영어 loaf)으로 쓰이지 않았고, <strong><u>게르만 민족 특유의 가장 오래된 이름</strong></u>에서 나타나기 시작했다; 고대 귀족들이 사용하던 독일어 hleib 및 현대 독일어 Laib, 또는 핀란드어 leipä, 에스토니아어 leib, 및 러시아어 хлеб (khleb)가 유사하다. 모두 <strong>고대 귀족들이 사용하던 독일어인 <u>"loaf"</u>에서 왔다.</strong></p>
+      <p style="margin-top:10px;">
+        일본어 <strong><u>パン</u>은 16세기 무렵 포르투갈어 <u>pão</u>에서 유래</strong>되었으며,<strong>한국어 빵도 일본을 통해 전래</strong>되었다. 개화기 당시에는 <strong>중국어 표현인 <u>‘면포(중국어 간체자: 面包, 정체자: 麵麭, 병음: miànbāo)’</u></strong>라는 이름으로 부른 적이 있다.</p>
+      <p style="margin-top:10px;">
+        로망스어군의 포르투갈어 pão 스페인어 pan, 프랑스어 Pain 은 그리스 어인 pa, 라틴어인 panis에서 기원하였다.</p>
     <p>
       <div id="disqus_thread"></div>
   <script>
@@ -69,5 +80,6 @@
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </p>
+</div>
 </body>
 </html>
