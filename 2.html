@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>역사</title>
+  <title>빵 - 역사</title>
   <meta charset="utf-8">
   <style>
     a {
@@ -11,6 +11,9 @@
     h1 {
       font-size: 2.5em;
       text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 15px;
     }
     ol {
       border-right: 1px solid gray;
@@ -27,6 +30,17 @@
     }
     #grid #article {
       padding-left: 25px;
+    }
+    @media(max-width:800px) {
+      #grid {
+        display: block;
+      }
+      ol {
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
